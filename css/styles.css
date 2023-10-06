@@ -1,5 +1,6 @@
 :root {
-    --main-color: rgba(33, 150, 243, 1);
+    --accent-color: rgba(33, 150, 243, 1);
     --text-color: rgba(33, 33, 33, 1);
-    --paragraph-color: rgba(128, 128, 128);
+    --paragraph-color: rgba(117, 117, 117, 1);
+    --bg-color: rgba(47, 48, 58, 1);
 }
