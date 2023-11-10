@@ -220,15 +220,16 @@ a {
     cursor: pointer;
 }
 .projects-list {
-    display: flex;
     list-style: none;
-    column-gap: 30px;
+    column-gap: 70px;
     column-count: 3;
+    margin-bottom: 94px;
 }
 .projects-item {
     border: 1px solid #eee;
     width: 370px;
     height: 404px;
+    margin-bottom: 30px;
 }
 .projects-title {
     color: var(--text-color);
