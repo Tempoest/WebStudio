@@ -154,10 +154,26 @@ a {
     list-style: none;
     align-items: flex-start;
     column-gap: 30px;
+    justify-content: center;
+}
+.advantage-icon-box {
+    display: flex;
+    background-color: var(--section-bg-color);
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.advantage-icon {
+    width: 10px;
+    flex-basis: 70px;
+    flex-grow: 0;
 }
 .advantage-heading {
     font-weight: 700;
     color: var(--main-color);
+    margin-bottom: 10px;
 }
 .advatage-text {
     width: 270px;
