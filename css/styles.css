@@ -83,7 +83,7 @@ a {
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
-
+    margin-bottom: 20px;
 }
 .contact-list {
     display: flex;
