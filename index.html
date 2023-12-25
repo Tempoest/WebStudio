@@ -25,10 +25,12 @@
             <label for="email" class="modal-form-label">Пошта</label><br>
             <input type="email" name="email" id="email" class="modal-form-input"><br>
             <label for="comment" class="modal-form-label">Коментар</label><br>
-            <input type="text" name="comment" id="comment" aria-colcount="3" class="modal-form-input"><br>
+            <textarea name="comment" id="comment" cols="10" rows="30" class="modal-form-input modal-textarea"></textarea><br>
             <input type="checkbox" name="agree" id="agree" class="modal-form-input modal-checkbox">
-            <label for="agree" class="modal-form-label">Погоджуюся з розсилкою та приймаю <a href="#" class="agree-label-link">Умови договору</a></label><br>
-            <button type="submit" onclick="sendData()" class="modal-button">Відправити</button>
+            <label for="agree" class="modal-form-label agree-label">Погоджуюся з розсилкою та приймаю <a href="#" class="agree-label-link">Умови договору</a></label><br>
+            <div class="btn-container">
+                <button type="submit" onclick="sendData()" class="modal-button">Відправити</button>
+            </div>
            </form>
         </div>
     </div>
