@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +13,25 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <div class="modal">
+        <div class="modal-content">
+           <span class="close">&times;</span>
+           <h5 class="modal-title">Залиште свої дані, ми вам передзвонимо</h5>
+           <form class="modal-form">
+            <label for="name" class="modal-form-label">Ім'я </label><br>
+            <input type="text" id="name" name="name" class="modal-form-input"><br>
+            <label for="phone" class="modal-form-label">Телефон </label><br>
+            <input type="tel" id="phone" name="phone" class="modal-form-input"><br>
+            <label for="email" class="modal-form-label">Пошта</label><br>
+            <input type="email" name="email" id="email" class="modal-form-input"><br>
+            <label for="comment" class="modal-form-label">Коментар</label><br>
+            <input type="text" name="comment" id="comment" aria-colcount="3" class="modal-form-input"><br>
+            <input type="checkbox" name="agree" id="agree" class="modal-form-input modal-checkbox">
+            <label for="agree" class="modal-form-label">Погоджуюся з розсилкою та приймаю <a href="#" class="agree-label-link">Умови договору</a></label><br>
+            <button type="submit" onclick="sendData()" class="modal-button">Відправити</button>
+           </form>
+        </div>
+    </div>
     <header class="header">
         <div class="container header-position">
             <a href="index.html" class="logo"><span class="logo-span">Web</span>Studio</a>
@@ -118,5 +137,6 @@
             </address>
         </div>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
