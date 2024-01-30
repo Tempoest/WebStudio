@@ -269,12 +269,26 @@ a {
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
+  align-items: center;
 }
-.advantage-icon {
+.first-box::before {
+  content: url(../images/icon1.svg);
+}
+.second-box::before {
+  content: url(../images/icon2.svg);
+}
+.third-box::before {
+  content: url(../images/icon3.svg);
+}
+.fouth-box::before {
+  content: url(../images/icon4.svg);
+}
+
+/* .advantage-icon {
   width: 10px;
   flex-basis: 70px;
   flex-grow: 0;
-}
+} */
 .advantage-heading {
   font-weight: 700;
   color: var(--main-color);
