@@ -395,24 +395,21 @@ a {
 
 .team-links {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 206px;
-  margin: 0 auto;
+  column-gap: 10px;
   margin-bottom: 30px;
+  justify-content: center;
 }
-.team-link {
-  padding: 12px;
-  border-radius: 50%;
+.team-link { 
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
   cursor: pointer;
 }
-.team-link .social-icon:hover {
+
+.social-icon:hover, .team-link:hover {
   background-color: var(--accent-color);
-  fill: var(--info-color);
+  fill: #FFF;
 }
-/* .social-icon:hover {
-  fill: var(--info-color);
-} */
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -490,8 +487,6 @@ a {
   width: 20px;
   height: 20px;
   fill: var(--info-color);
-  /* margin-left: 12px;
-  margin-top: 10px; */
 }
 .footer-link:hover {
   background-color: var(--accent-color);
