@@ -196,8 +196,14 @@ a {
   color: var(--paragraph-color);
   text-decoration: none;
 }
-.contact-item a:hover {
+.contact-item:hover {
   color: var(--accent-color);
+  fill: #2186d9;
+}
+.header-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 2px;
 }
 .nav-list {
   display: flex;
@@ -249,6 +255,7 @@ a {
 }
 .hero-button:hover {
   background-color: #2186d9;
+  cursor: pointer;
 }
 .advatage-list {
   padding-top: 94px;
@@ -268,8 +275,8 @@ a {
   margin-bottom: 30px;
   align-items: center;
 }
-.first-box::before {
-  content: url(../images/icon1.svg);
+/* .first-box::before {
+  content: url(../images/symbol-defs.svg#icon-antenna);
 }
 .second-box::before {
   content: url(../images/icon2.svg);
@@ -279,13 +286,16 @@ a {
 }
 .fouth-box::before {
   content: url(../images/icon4.svg);
-}
+} */
 
 /* .advantage-icon {
   width: 10px;
   flex-basis: 70px;
   flex-grow: 0;
 } */
+.advantage-icon {
+  width: 70px;
+}
 .advantage-heading {
   font-weight: 700;
   color: var(--main-color);
@@ -310,19 +320,38 @@ a {
   list-style: none;
   justify-content: center;
   column-gap: 30px;
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
+}
+.wwd-desc-wrap {
+  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  position: relative;
+  top: -70px;
+}
+.wwd-description {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 107px;
+  padding-right: 107px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--info-color);
+}
+.wwd-wide {
+  padding-left: 93px;
+  padding-right: 93px;
 }
 .team-section {
-  height: 648px;
   width: 100%;
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-title {
   color: var(--main-color);
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  padding-top: 94px;
   padding-bottom: 55px;
 }
 .team-list {
@@ -351,14 +380,81 @@ a {
   color: var(--main-color);
 }
 .team-job {
-  padding-bottom: 30px;
+  margin-bottom: 15px;
   color: var(--text-color);
   letter-spacing: 0.48px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+.team-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 206px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.team-link {
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.team-link .social-icon:hover {
+  background-color: var(--accent-color);
+  fill: var(--info-color);
+}
+/* .social-icon:hover {
+  fill: var(--info-color);
+} */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.clients-item {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+  cursor: pointer;
+}
+.clients-item:hover, .clients-logo:hover {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.clients-logo {
+  fill: var(--text-color);
 }
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bg-color);
+}
+.footer-pos {
+  display: flex;
+  column-gap: 70px;
+  align-items: flex-start;
 }
 .contact-link {
   margin-bottom: 9px;
@@ -375,6 +471,37 @@ a {
 .number {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.71;
+}
+.footer-links {
+  display: flex;
+  column-gap: 10px;
+}
+.footer-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px 12px 12px 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  cursor: pointer;
+  justify-content: center;
+  
+}
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--info-color);
+  /* margin-left: 12px;
+  margin-top: 10px; */
+}
+.footer-link:hover {
+  background-color: var(--accent-color);
+}
+.join-text {
+  text-transform: uppercase;
+  color: var(--info-color);
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 /* Portfolio page styles */
