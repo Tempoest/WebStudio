@@ -130,16 +130,36 @@ a {
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 40px;
 }
-.modal-form-input::before {
-  content: url(../images/symbol-defs.svg#icon-email-modal);
-  /* background-image: url(../images/symbol-defs.svg#icon-email-modal); */
-  background-position: left 10px center;
-  background-size: 16px;
+.modal-form-input:focus {
+  border-color: var(--accent-color);
+  outline: none; 
+
+}
+
+.modal-icon:focus {
+  fill: var(--accent-color);
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 11px;
+  left: 15px;
 }
 
 .modal-textarea {
   height: 100px;
+  padding-left: 16px;
+  padding-top: 12px;
+}
+
+.modal-textarea::placeholder {
+  font-size: 12px;
 }
 .modal-checkbox {
   width: 16px;
@@ -511,6 +531,60 @@ a {
   margin-bottom: 20px;
   margin-top: 10px;
 }
+
+.footer-form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-form-label {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-form-wrap {
+  width: 372px;
+  margin-top: 10px;
+}
+
+.footer-form-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  background-color: #ffffff00;
+  padding-left: 16px;
+}
+
+.footer-form-input::placeholder {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.footer-form-button {
+  border-radius: 4px;
+  border-style: none;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer-form > button:hover {
+  background-color: #2186d9;
+}
+
+
+
 
 /* Portfolio page styles */
 .projects-section {

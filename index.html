@@ -31,26 +31,41 @@
         <h5 class="modal-title">Залиште свої дані, ми вам передзвонимо</h5>
         <form class="modal-form">
           <label for="name" class="modal-form-label">Ім'я </label><br />
-          <input
-            type="text"
-            id="name"
-            name="name"
-            class="modal-form-input"
-          /><br />
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="modal-form-input"
+            />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-person-modal"></use>
+            </svg>    
+          </div>
           <label for="phone" class="modal-form-label">Телефон </label><br />
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            class="modal-form-input"
-          /><br />
+          <div class="input-wrapper">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="modal-form-input"
+            />
+            <svg class="modal-icon" width="16" height="16">
+              <use href="./images/symbol-defs.svg#icon-phone-modal"></use>
+            </svg>
+          </div>
           <label for="email" class="modal-form-label">Пошта</label><br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="modal-form-input"
-          /><br />
+          <div class="input-wrapper">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="modal-form-input"
+            />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-email-modal"></use>
+            </svg>
+          </div>
           <label for="comment" class="modal-form-label">Коментар</label><br />
           <textarea
             name="comment"
@@ -58,6 +73,7 @@
             cols="10"
             rows="30"
             class="modal-form-input modal-textarea"
+            placeholder="Введіть текст"
           ></textarea
           ><br />
           <input
@@ -446,8 +462,16 @@
             </li>
           </ul>
         </div>
+        <form action="#" class="footer-form">
+          <div class="footer-form-wrap">
+            <label for="email" class="footer-form-label">Підпишіться на розсилку</label>
+            <input type="email" name="email" id="footer-email" placeholder="E-mail" class="footer-form-input">
+          </div>
+          <button type="submit" class="footer-form-button">Підписатися <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
       </div>
     </footer>
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/d21c439926.js" crossorigin="anonymous"></script>
   </body>
 </html>
