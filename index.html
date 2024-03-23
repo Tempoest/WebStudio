@@ -76,16 +76,18 @@
             placeholder="Введіть текст"
           ></textarea
           ><br />
-          <input
-            type="checkbox"
-            name="agree"
-            id="agree"
-            class="modal-form-input modal-checkbox"
-          />
-          <label for="agree" class="modal-form-label agree-label"
-            >Погоджуюся з розсилкою та приймаю
-            <a href="#" class="agree-label-link">Умови договору</a></label
-          ><br />
+          <div class="agree-wrap">
+            <input
+              type="checkbox"
+              name="agree"
+              id="agree"
+              class="modal-form-input modal-checkbox"
+            /> 
+            <label for="agree" class="modal-form-label agree-label"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#" class="agree-label-link">Умови договору</a></label
+            >
+          </div>
           <div class="btn-container">
             <button type="submit" onclick="sendData()" class="modal-button">
               Відправити
