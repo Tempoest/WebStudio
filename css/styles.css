@@ -88,7 +88,7 @@ a {
 
 }
 .modal-content {
-  transform: translate(-0%, -0%);
+  transform: translate(-0%, -15%);
   background-color: #ffffff;
   margin: 15% auto;
   padding: 20px;
@@ -137,8 +137,14 @@ a {
 }
 
 .modal-form-input:focus {
+  outline: none;
   border-color: var(--accent-color);
-  outline: none; 
+}
+
+.modal-form-input:focus ~ .modal-icon,
+.modal-icon:focus {
+  fill: var(--accent-color);
+  outline: var(--accent-color);
 }
 
 .modal-icon:focus {
@@ -189,6 +195,7 @@ a {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: #fff;
   font-size: 16px;
+  cursor: pointer;
 }
 .header-position {
   display: flex;
