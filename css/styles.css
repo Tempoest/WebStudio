@@ -262,6 +262,21 @@ a {
 .nav-link:hover {
   color: var(--accent-color);
 }
+.underline {
+  position: relative;
+  color: var(--accent-color);
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: -31px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color);
+  z-index: 1;
+}
 .hero-section {
   max-width: 1600px;
   margin: 0 auto;
@@ -623,6 +638,33 @@ a {
 .projects-item:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.overlay-container {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background-color: rgba(33, 150, 243, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+.overlay-container:hover .overlay {
+  opacity: 1;
+}
+.overlay-text {
+  color: #fff;
+  font-size: 18px;
+  line-height: 156%;
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 324px;
 }
 .projects-img {
   width: 100%;
