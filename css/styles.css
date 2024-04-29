@@ -165,6 +165,7 @@ a {
   height: 120px;
   padding-left: 16px;
   padding-top: 12px;
+  resize: none;
 }
 
 .modal-textarea::placeholder {
